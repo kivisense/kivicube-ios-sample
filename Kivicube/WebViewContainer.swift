@@ -82,6 +82,6 @@ struct WebViewContainer: UIViewRepresentable {
 
 struct WebViewContainer_Previews: PreviewProvider {
     static var previews: some View {
-        WebViewContainer(url: URL(string: "https://www.kivicube.com/scenes/example123")!)
+        WebViewContainer(url: URL(string: "https://www.kivicube.com/scenes/zIUkUZDrNp2HDDf562A2zS2v85uCcWJE")!)
     }
 }
