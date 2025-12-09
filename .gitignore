@@ -1,0 +1,85 @@
+# Xcode
+.DS_Store
+build/
+*.swp
+*.perspective
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# CocoaPods
+Pods/
+*.xcworkspace
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+dSYMs/
+
+# Derived Data
+DerivedData/
+*.moved-aside
+
+# Archives
+*.xcarchive
+
+# Playgrounds
+.playground/
+.playgroundxcworkspace/
+
+# Core Data
+*.xcdatamodeld/*.xccurrentversion
+
+# Swift Package Manager
+Packages/
+.swiftpm/
+
+# App Store
+*.pkg
+
+# Xcode 11 and later
+*.xcframework
+
+# Firebase
+GoogleService-Info.plist
+
+# Provisioning
+*.mobileprovision
+*.provisionprofile
+
+# CocoaPods
+Podfile.lock
+
+# Add any per-project files here
+.claude
