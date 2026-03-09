@@ -18,20 +18,20 @@ struct WebViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
 
-        // 允许JavaScript执行
+        // Allow JavaScript execution
         configuration.preferences.javaScriptEnabled = true
         configuration.preferences.javaScriptCanOpenWindowsAutomatically = true
 
-        // 允许本地存储和缓存
+        // Allow local storage and caching
         configuration.websiteDataStore = WKWebsiteDataStore.default()
 
-        // 允许媒体自动播放和内联播放
+        // Allow media autoplay and inline playback
         configuration.allowsInlineMediaPlayback = true
         if #available(iOS 10.0, *) {
             configuration.mediaTypesRequiringUserActionForPlayback = []
         }
 
-        // 配置WebRTC支持
+        // Configure WebRTC support
         if #available(iOS 14.5, *) {
             configuration.allowsPictureInPictureMediaPlayback = true
         }
@@ -56,7 +56,7 @@ struct WebViewContainer: UIViewRepresentable {
     }
 
     class Coordinator: NSObject, WKNavigationDelegate, WKUIDelegate {
-        // 处理WebRTC等权限请求
+        // Handle WebRTC and other permission requests
         func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             decisionHandler(.allow)
         }
@@ -65,7 +65,7 @@ struct WebViewContainer: UIViewRepresentable {
             decisionHandler(.allow)
         }
 
-        // 处理JavaScript弹窗和权限请求
+        // Handle JavaScript alerts and permission requests
         func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
             completionHandler()
         }

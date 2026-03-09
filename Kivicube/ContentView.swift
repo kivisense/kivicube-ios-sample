@@ -21,12 +21,12 @@ struct ContentView: View {
                     .fontWeight(.bold)
 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("场景ID")
+                    Text("Scene ID")
                         .font(.headline)
                         .foregroundColor(.secondary)
 
                     HStack {
-                        TextField("请输入32位字符的场景ID", text: $sceneId)
+                        TextField("Please enter 32-character scene ID", text: $sceneId)
                             .textFieldStyle(.roundedBorder)
                             .autocorrectionDisabled()
                             .textInputAutocapitalization(.never)
@@ -52,7 +52,7 @@ struct ContentView: View {
                         isShowingWebView = true
                     }
                 } label: {
-                    Text("打开Kivicube场景")
+                    Text("Open Kivicube Scene")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
@@ -60,12 +60,12 @@ struct ContentView: View {
                 .padding(.horizontal, 20)
 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("合辑ID")
+                    Text("Collection ID")
                         .font(.headline)
                         .foregroundColor(.secondary)
 
                     HStack {
-                        TextField("请输入6位合辑ID", text: $collectionId)
+                        TextField("Please enter 6-character collection ID", text: $collectionId)
                             .textFieldStyle(.roundedBorder)
                             .autocorrectionDisabled()
                             .textInputAutocapitalization(.never)
@@ -91,7 +91,7 @@ struct ContentView: View {
                         isShowingWebView = true
                     }
                 } label: {
-                    Text("打开Kivicube合辑")
+                    Text("Open Kivicube Collection")
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
