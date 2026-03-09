@@ -1,5 +1,5 @@
-# iOS开发接入Kivicube场景/合辑
+# iOS Development Integration of Kivicube Scenes/Collections
 
-使用系统的WKWebView，来打开Kivicube场景/合辑的URL链接即可。
+Use the system's WKWebView to open the URL link of the Kivicube scene/collection.
 
-可兼容iOS >= 14.3，已具备不错的兼容性。
+Compatible with iOS >= 14.3, offering decent compatibility.
